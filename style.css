@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: rgb(216,0,1);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+
+@media only screen and (min-width: 768px) {
+    header {
+        display: flex;
+        align-items: center;
+    }
+    
+    nav {
+        padding-left: 10%;
+    }
+    
+    ul {
+        list-style: none;
+        display: flex;
+        width: 100%;
+        gap: 200px;
+    }
+    
+    li {
+        white-space: nowrap;
+        font-size: 2rem;
+    }
+    
+    main {
+        padding: 2%;
+    }
+    
+    #pageimage {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    aside {
+        float: right;
+        width: 20%;
+    }
+    
+    #galerie {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    #disclaimer {
+        width: 15%;
+    }
+    
+    #galerielink {
+        padding-right: 5%;
+    }
+    
+    footer {
+        padding: 2%;
+        display: flex;
+        clear: both;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 768px) {
+    ul {
+        display: flex;
+        flex-wrap: wrap; /* Ermöglicht das Umfließen der Links in die nächste Zeile */
+        justify-content: space-around; /* Verteilt die Links gleichmäßig mit Abstand */
+        gap: 20%;
+    }
+
+    #pageimage {
+        width: 100%; 
+    }
+     li {
+        font-size: 2rem;
+    }
+    
+    main {
+        padding: 2%;
+    }
+    
+    #pageimage {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    #galerie {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    
+    #galerielink {
+        padding-right: 5%;
+    }
+    
+    footer {
+        padding: 2%;
+        clear: both;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
